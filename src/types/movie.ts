@@ -1,4 +1,13 @@
-export type DetailedMovie = {
+type Movie = {
+  title: string;
+  year: number;
+  genre: string;
+  director: string;
+  actors: string[];
+  rating: number;
+};
+
+type DetailedMovie = {
   title: string;
   year: number;
   genre: string;
@@ -12,8 +21,3 @@ export type DetailedMovie = {
     otherAwards: string[];
   };
 };
-
-export type Movie = Pick<
-  DetailedMovie,
-  "title" | "year" | "genre" | "director" | "actors" | "rating"
->;
