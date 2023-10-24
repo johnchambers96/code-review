@@ -18,7 +18,6 @@ export default function HomePage({ movieList }: HomeProps) {
   return (
     <main className={`${styles.main} ${inter.className}`}>
       <h1>Movie list</h1>
-      <span>{JSON.stringify(movies)}</span>
       {movies?.map((movie, index) => (
         <a key={`${index}`} href={`/movie/${movie.id}`}>
           <span>{movie.title}</span>
