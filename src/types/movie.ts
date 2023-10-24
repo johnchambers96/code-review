@@ -1,4 +1,4 @@
-type Movie = {
+export type Movie = {
   title: string;
   year: number;
   genre: string;
@@ -7,7 +7,7 @@ type Movie = {
   rating: number;
 };
 
-type DetailedMovie = {
+export type DetailedMovie = {
   title: string;
   year: number;
   genre: string;
